@@ -20,6 +20,8 @@ class TagListViewModel : ViewModel() {
     val tagListData = MutableLiveData<List<Product>>()
 
 
+
+
     fun getTagList() {
         interactor.getProductTags(TagListCallback())
     }
@@ -48,4 +50,5 @@ class TagListViewModel : ViewModel() {
     private fun updateData(data: ProductResponse) {
         tagListData.value = data.products
     }
+
 }

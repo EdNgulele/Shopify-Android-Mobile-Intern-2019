@@ -3,8 +3,11 @@ package com.example.edblack.shopifyandroidmobileintern.ui
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.DefaultItemAnimator
+import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.LinearLayoutManager
 import android.view.View
+import android.widget.LinearLayout.HORIZONTAL
 import com.example.edblack.shopifyandroidmobileintern.R
 import com.example.edblack.shopifyandroidmobileintern.common.getViewModel
 import com.example.edblack.shopifyandroidmobileintern.common.subscribe
@@ -36,8 +39,9 @@ class TagListActivity : AppCompatActivity() {
     }
 
     private fun initializeUi() {
-        rview_tag_list.layoutManager = GridLayoutManager(this, 1)
+        rview_tag_list.layoutManager = LinearLayoutManager(this)
         rview_tag_list.itemAnimator = DefaultItemAnimator()
+        rview_tag_list.addItemDecoration(DividerItemDecoration(this, HORIZONTAL))
         rview_tag_list.adapter = tagListAdapter
     }
 
