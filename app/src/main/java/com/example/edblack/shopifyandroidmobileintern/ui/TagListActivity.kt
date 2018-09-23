@@ -1,16 +1,16 @@
-package com.example.edblack.shopifyandroidmobileintern
+package com.example.edblack.shopifyandroidmobileintern.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.GridLayoutManager
 import android.view.View
+import com.example.edblack.shopifyandroidmobileintern.R
 import com.example.edblack.shopifyandroidmobileintern.common.getViewModel
 import com.example.edblack.shopifyandroidmobileintern.common.subscribe
 import com.example.edblack.shopifyandroidmobileintern.ui.adapter.TagListAdapter
 import com.example.edblack.shopifyandroidmobileintern.viewModel.TagListViewModel
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
 
 class TagListActivity : AppCompatActivity() {
 
